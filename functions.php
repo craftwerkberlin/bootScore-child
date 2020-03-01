@@ -6,14 +6,10 @@
 
 	}
 	add_action( 'wp_enqueue_scripts', 'child_theme_styles' );
-?>
 
-
-<?php
 	// Custom JS
 	function child_add_scripts() {
 		wp_register_script('custom', get_stylesheet_directory_uri() . '/js/custom.js', false, '', true);
 		wp_enqueue_script('custom');
 	}
 	add_action( 'wp_enqueue_scripts', 'child_add_scripts' ); 
-?>
