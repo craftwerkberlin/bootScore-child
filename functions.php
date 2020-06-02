@@ -9,7 +9,7 @@
 
 	// Custom JS
 	function child_add_scripts() {
-		wp_register_script('custom', get_stylesheet_directory_uri() . '/js/custom.js', false, '', true);
-		wp_enqueue_script('custom');
+		wp_register_script('child', get_stylesheet_directory_uri() . '/js/child.js', false, '', true);
+		wp_enqueue_script('child');
 	}
 	add_action( 'wp_enqueue_scripts', 'child_add_scripts' ); 
